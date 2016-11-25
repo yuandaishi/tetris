@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+//		console.log(aaa);
+//		console.log(aaa);
+//		var aaa="s";
+//		var shape_arr="SSSS";
+//		console.log(shape_arr)
+//		foo();
+//		//函数声明，代码优先解析（解析不等于执行，比如console.log语句就不会执行，
+//		//但是声明变量var会解析，但是并没有赋值。这个时候，这个变量的作用域是当前执行的上下文，也就是在这个函数内部，就是说shape_arr指向函数内部的shape_arr）。
+//		//此时是undefined
+//		function foo(){
+//			if(true){
+//				console.log("AAAA")
+//				console.log(shape_arr)
+//				var shape_arr="BBBB"
+////			}else{
+////				var shape_arr="BBBB";
+//			}
+//		}
+		
+//		var foo=function(){
+//			console.log("sjjs");
+//		}()
+//		var foo_1=setInterval(foo,2000);//第一个依然会每隔2000ms执行一次
+//		var foo_2=setInterval(foo,2100);
+//		console.log(foo_1)
+//		console.log(foo_2)
+//		function foo(){
+//			console.log("ajaj")
+//		}
+//也就是说foo 2000ms执行，2100ms执行，4000ms执行，4200ms执行，依次循环，双倍效果
+//clearInterval返回的值是undefined，而setInterval返回的值是一个整数
+//		for(var i_y_a=0;i_y_a<4;i_y_a++){
+//			console.log("sbsbsb");
+//		}
+//		var arr=[];
+//		var obj={};
+//		console.log(obj instanceof Array);
+//		var obj_1={
+//			name:"yuan",
+//			sex:"man",
+//			arr:[
+//				[0,1],
+//				[1,2]
+//			]
+//		}
+//		
+//		var obj_2=clone_obj(obj_1);
+//		obj_1.name="dai";
+////		obj_1.arr="hehe";
+////		obj_2.sex="female"
+//		console.log(obj_1);
+//		console.log(obj_2)
+//		
+//		function clone_obj(myObj){//克隆对象
+//		  	if(typeof(myObj) != 'object') return myObj; 
+//		  	if(myObj == null) return myObj;  
+//		    
+//		    if(myObj instanceof Array){//如果是数组的话，则创建新数组
+//		    	var myNewObj=new Array();
+//		    	console.log("jej")
+//		    	for(var i=0;i<myObj.length;i++){
+//		    		myNewObj[i]=arguments.callee(myObj[i]);
+//		    	}
+//		    }else{
+//		    	var myNewObj = new Object(); 
+//		    	for(var i in myObj)  
+//		   	 	myNewObj[i] = arguments.callee(myObj[i]);//递归。把所有的子对象都clone
+//		    }
+//		  	return myNewObj;  
+//		}
+//		var obj_1={
+//			name:"yuan",
+//			sex:"man",
+//			arr:[
+//				[0,1],
+//				[1,2]
+//			]
+//		}
+//		//alert(obj_1.name)
+//		//console.log(obj_1);
+//		var b=obj_1
+//		b.name="heh";
+//		console.log(obj_1)
+//		var Obj=function(msg){
+//          this.msg=msg;
+//          this.shout=function(){
+//              console.log(this.msg);
+//             // return this.msg;
+//          }
+////          this.waitAndShout=function(){       
+//////              console.log(this);
+////              setTimeout(this.shout, 2000);//这里的this是在一个函数下，所以已经不再指向这个对象了，而是指向window
+////          }
+//			this.waitAndShout=setTimeout(this.shout, 2000);
+//      }
+//      var aa=new Obj("abc");//无法输出this.msg
+//      //console.log(aa)
+//      //aa.shout();
+//      aa.waitAndShout;
+//		var obj={
+//			a:'a',
+//			b:function(){
+//				console.log(this.a);
+//			}
+//		}
+//		obj.b();
+//		console.log(a);
+//		var a="hehehe";
+		//等价于
+//		var a;
+//		console.log(a);
+//		a="hehehe";
+//		foo();
+//		function foo(){
+//			console.log("hehe")
+//		}
+		
+//		foo();
+//		//console.log(foo);
+//		var foo=function(){
+//			console.log("hehe")
+//		}
+//		foo();
+//		var foo;
+//		foo=function(){
+//			console.log("hehe")
+//		}
+//		console.log(this);
+//		function foo(){
+//			var this="hehe";
+//			console.log(this)
+//		}
+//		foo()
+//		var obj={
+//			a:"a"
+//		}
+//		obj.__proto__.b=function(){
+//			console.log(this.a);
+//		};
+//		obj.b();//a
+//		var obj_2={
+//			a:"he"
+//		}
+////		obj_2.b();//he
+//		var foo=setInterval(function(){
+//			
+//		},200);
+//		console.log(foo);//1
+//		foo_1=setInterval(function(){
+//			
+//		},100);
+//		console.log(foo_1);//2
+//		foo_3=clearInterval(foo);
+//		console.log(foo_3);//undefined
+//		console.log(foo);//1
+//		var foo_4=setTimeout(function(){
+//			
+//		},200);
+//		console.log(foo_4);//3
+		for(var i=0;i<3;i++){
+//			for (var j=0;j<3;j++){
+//				console.log(j+"aa");
+//			};
+			for (var i=0;i<3;i++){
+				console.log(i+"bb")
+			}
+		}
+	</script>
+</html>

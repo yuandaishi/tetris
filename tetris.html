@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p style="font-size: 20px;">键盘箭头A,D控制左右移动，S控制快速下滑。W控制变形,空格控制暂停，enter开始游戏</p>
+		<div id="box" style="width: 1000px;height: 800px;border: 1px solid pink;margin: 0 auto;position: relative;">
+			
+		</div>
+	</body>
+	<script src="shape.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tetris.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new tetris({
+			dom:"box",
+			side_length:25,
+			row:20,
+			col:12,
+			v_dowm:500//设置级别1时的下落速度
+		});
+	</script>
+</html>
